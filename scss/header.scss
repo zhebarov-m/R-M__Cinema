@@ -46,10 +46,10 @@ header {
       font-size: 25px;
       font-family: 'El Messiri', sans-serif;
       font-weight: 700;
+      transition: .2s;
       cursor: pointer;
 
       &:hover {
-         transition: 0.2s;
          color: whitesmoke;
       }
    }

@@ -50,10 +50,10 @@ header {
   font-size: 25px;
   font-family: "El Messiri", sans-serif;
   font-weight: 700;
+  transition: 0.2s;
   cursor: pointer;
 }
 .menu .menu__list:hover {
-  transition: 0.2s;
   color: whitesmoke;
 }
 .menu li:nth-child(1) {

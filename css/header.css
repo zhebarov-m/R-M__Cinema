@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+header {
+  height: 160px;
+  width: 100%;
+  background-color: rgba(46, 40, 42, 0.568627451);
+  margin-bottom: 30px;
+}
+
+.header__logo {
+  padding-left: 70px;
+  display: inline-block;
+  padding-top: 40px;
+  font-size: 50px;
+  line-height: 37px;
+  font-weight: 700;
+  color: whitesmoke;
+  font-family: "Dancing Script", cursive;
+}
+.header__logo #r {
+  color: #CD5334;
+}
+.header__logo #m {
+  color: #17BEBB;
+}
+.header__logo .cinema {
+  display: inline-block;
+  text-decoration: line-through;
+  text-shadow: 0px 0px 10px rgba(218, 165, 32, 0.123);
+  font-family: "El Messiri", sans-serif;
+  margin-left: 78px;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.menu {
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu__list {
+  margin-left: 50px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.menu .menu__list:hover {
+  transition: 0.2s;
+  color: whitesmoke;
+}
+.menu li:nth-child(1) {
+  color: #CD5334;
+  margin-left: 0px;
+}
+.menu li:nth-child(2) {
+  color: #17BEBB;
+}
+.menu li:nth-child(3) {
+  color: #CD5334;
+}
+.menu li:nth-child(4) {
+  color: #17BEBB;
+}
+.menu li:nth-child(5) {
+  color: #CD5334;
+}

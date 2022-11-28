@@ -1,0 +1,79 @@
+@import 'null.scss';
+
+html,
+body {
+   width: 100vw;
+   height: 100vh;
+
+
+   background-image: url('../img/background.jpg');
+}
+
+.content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   margin: 0px 230px 0px 230px;
+   background-color: #74747491;
+} 
+.list__films {
+   display: grid;
+   justify-items: center;
+   column-gap: 0px;
+   row-gap: 100px;
+   width: calc(100%);
+   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+   padding-top: 50px;
+}
+
+.film__card {
+   width: 300px;
+   height: 380px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition: .2s;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 0px 30px rgba(100, 100, 100, 0.397);
+
+   &:hover {
+       transform: scale(1.1, 1.1);
+   }
+   &:hover .photo {
+       border-radius: 20px;
+       transition: 0;
+       background-color: rgb(255, 255, 255);
+       width: 300px;
+   }
+
+   .photo {
+       border-radius: 20px;
+       width: 300px;
+       height: 420px;
+       transition: .2s;
+       background-color: white;
+       object-fit: cover;
+   }
+   .film__card_text {
+      p:first-child {
+         margin-bottom: 5px;
+         color: white;
+         background-color: #2e282a;
+      }
+      text-align: center;
+      color: #2e2e2e;
+      font-weight: 700;
+      margin-top: -83px;
+      border-radius: 0px 0px 20px 20px;
+      font-family: 'FuturaDemic';
+      font-size: 20px;
+      color: white;
+
+      background-color: #17bebbcc;
+      width: 300px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+   }
+}

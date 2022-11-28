@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/background.jpg");
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 230px 0px 230px;
+  background-color: rgba(116, 116, 116, 0.568627451);
+}
+
+.list__films {
+  display: grid;
+  justify-items: center;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  row-gap: 100px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  padding-top: 50px;
+}
+
+.film__card {
+  width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px rgba(100, 100, 100, 0.397);
+}
+.film__card:hover {
+  transform: scale(1.1, 1.1);
+}
+.film__card:hover .photo {
+  border-radius: 20px;
+  transition: 0;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+}
+.film__card .photo {
+  border-radius: 20px;
+  width: 300px;
+  height: 420px;
+  transition: 0.2s;
+  background-color: white;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.film__card .film__card_text {
+  text-align: center;
+  color: #2e2e2e;
+  font-weight: 700;
+  margin-top: -83px;
+  border-radius: 0px 0px 20px 20px;
+  font-family: "FuturaDemic";
+  font-size: 20px;
+  color: white;
+  background-color: rgba(23, 190, 187, 0.8);
+  width: 300px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.film__card .film__card_text p:first-child {
+  margin-bottom: 5px;
+  color: white;
+  background-color: #2e282a;
+}
